@@ -39,3 +39,8 @@ def cronverter(cron_exp):
         return f"At {time} everyday."    
     
     return f"At {time} {day_of_month} {day_of_week} {month_name}"
+
+if __name__ == "__main__":
+    import sys
+    
+    print(cronverter(sys.argv[1]))
