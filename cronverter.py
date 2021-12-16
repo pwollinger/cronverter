@@ -72,7 +72,7 @@ def cronverter(cron_exp):
 
     #Checks if only the time is defined. If so, then returns the time with the everyday sentence.
     if (day_month == '*' and day_week == '*' and month == '*'):
-        return f"{time} everyday."    
+        return f"{time} everyday"    
     
     #Returns the english sentence.
     return f"{time} {day_of_month}{day_of_week} {month_name}"
